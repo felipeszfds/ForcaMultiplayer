@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #palavra-secreta {
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+
+  #mensagens {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  #mensagens p {
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #mensagens p:last-child {
+    border-bottom: none;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .faixa {
+    margin-top: 20px;
+  }
+  
+  .quadrado {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    margin: 5px;
+    display: inline-block;
+    color: red;
+    border-radius: 50%;
+  }
+
+  .quadrado.vermelho {
+  background-color: red;
+}
+  

@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogo de Forca Multiplayer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Jogo de Forca Multiplayer</h1>
-  <div id="mensagens"></div>
+  <h1>Forca.IO</h1>
+  <div id="palavra-secreta"></div>
   <input type="text" id="chute" maxlength="1">
-  <button onclick="enviarChute()">Enviar Chute</button>
+  <button id="enviar" onclick="enviarChute()">Enviar Chute</button>
+  <div class="faixa">
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+  </div>
+  <div id="mensagens"></div>
+  <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
+
   <script src="/socket.io/socket.io.js"></script>
   <script src="script.js"></script>
 </body>
